@@ -84,11 +84,11 @@ fun ProductCardDesign(
                     )
                     Text(
                         text = product.detail,
-                        style = MaterialTheme.typography.bodyLarge
+                        style = MaterialTheme.typography.bodySmall
                     )
                     Text(
                         text = formatHarga(product.harga),
-                        style = MaterialTheme.typography.bodySmall
+                        style = MaterialTheme.typography.bodyLarge
                     )
                 }
                 IconButton(onClick = {onItemClicked(product.id)},

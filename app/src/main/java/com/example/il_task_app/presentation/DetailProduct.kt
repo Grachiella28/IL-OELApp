@@ -46,7 +46,7 @@ fun DetailProductContent(
 ) {
   Row(
     verticalAlignment = Alignment.CenterVertically,
-    horizontalArrangement = Arrangement.Start,
+    horizontalArrangement = Arrangement.Center,
     modifier = Modifier.padding(16.dp)
   ){
     AsyncImage(
@@ -64,15 +64,29 @@ fun DetailProductContent(
       Text(
         text = newProductList[0].judul,
         fontSize = 25.sp,
-        fontWeight = FontWeight.Bold
+        fontWeight = FontWeight.Bold,
+        style = MaterialTheme.typography.bodyLarge
       )
       Text(
         text = newProductList[0].detail,
-        style = MaterialTheme.typography.titleSmall,
+        style = MaterialTheme.typography.bodyLarge,
       )
       Text(
         text = formatHarga(newProductList[0].harga),
-        style = MaterialTheme.typography.titleSmall,
+        style = MaterialTheme.typography.titleMedium,
+      )
+      //Spacer(modifier = Modifier.width(46.dp))
+      Text(
+        text = "Deskripsi",
+        fontWeight = FontWeight.Bold,
+        modifier = Modifier
+          .padding(top = 16.dp)
+      )
+      Text(
+        text = "Parfum Unisex Baccaros Ora Et Labora EDP Premium,\n" +
+                "\n" +
+                "Perpaduan Inspirasi Baccarat dan kesegaran buah, Membuat sebuah pandangan baru yang harus kamu rasakan\n" +
+                "\n"
       )
     }
   }
