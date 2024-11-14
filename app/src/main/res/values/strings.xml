@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IL-task-app</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_allproduct">All Product</string>
+    <string name="menu_detailproduct">Detail Product</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_back">Back</string>
+    <string name="menu_share">Share</string>
+</resources>
