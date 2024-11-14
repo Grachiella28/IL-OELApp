@@ -39,7 +39,9 @@ fun Homepage(
     {
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(8.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
         ) {
             item {
                 LazyRow(

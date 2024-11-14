@@ -62,10 +62,11 @@ fun OelScreen(
                 actions = {
                     if (navController.previousBackStackEntry != null) {
                         // Show back button if there's a previous entry
-                        IconButton(onClick = { navController.navigateUp() }) {
+                        IconButton(
+                            onClick = { navController.navigateUp() }) {
                             Icon(
                                 imageVector = Icons.Default.ArrowBack,
-                                contentDescription = stringResource(id = R.string.menu_back)
+                                contentDescription = stringResource(id = R.string.menu_back),
                             )
                         }
                     }

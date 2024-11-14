@@ -22,7 +22,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.il_task_app.R
@@ -54,7 +56,7 @@ fun ProductCardDesign(
         Box(
             modifier = Modifier
                 .background(
-                    color = Color.White,
+                    color = Color(color = 0xFFF8EDDA),
                     shape = RoundedCornerShape(16.dp)
                 )
                 .size(width = 380.dp, height = 120.dp)
@@ -65,17 +67,20 @@ fun ProductCardDesign(
                 Image(
                     painter = painterResource(id = product.img),
                     contentDescription = "product",
+                    contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .clip(shape = RoundedCornerShape(16.dp))
                         .size(120.dp)
                 )
                 Column(
                     modifier = Modifier
-                        .padding(start = 8.dp)
+                        .padding(start = 16.dp)
+                        .width(160.dp)
                 ) {
                     Text(
                         text = product.judul,
-                        style = MaterialTheme.typography.titleMedium
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Bold
                     )
                     Text(
                         text = product.detail,

@@ -67,7 +67,7 @@ fun DiscountCardDesign(
                 ){
                     Text(
                         text = discount.judul,
-                        style = MaterialTheme.typography.titleMedium
+                        style = MaterialTheme.typography.titleMedium,
                     )
                     Text(
                         text = discount.detail,
